@@ -1,6 +1,6 @@
 # new_linux_install
 
-On a new Linux installation:
+On a new Debian-based Linux installation:
 - set some .bashrc basic stuff
 - update & upgrade
 - install several dependencies
