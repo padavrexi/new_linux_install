@@ -45,4 +45,4 @@ sudo python setup.py install
 #
 # Run checks!
 cd ~
-echo -e "\n\nFINISHED!!!\n\nTry running\n   ansible --version\n   ansible-doc napalm_get_facts\n   ansible-doc ntc_file_copy\nto verify installations"
+echo -e "\n\nScript execution finished. To verify installations, try running:\n- ansible --version\n- ansible-doc napalm_get_facts\n- ansible-doc ntc_file_copy"
