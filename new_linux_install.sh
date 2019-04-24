@@ -8,7 +8,7 @@ echo -e "\n*** Fix .bashrc ***"
 echo -e '\n# Custom prompt & aliases' >> .bashrc
 echo "PS1='$ '" >> ~/.bashrc
 echo "alias ll='ls -lF --group-directories-first'" >> ~/.bashrc
-echo "alias ap=ansible-playbook" >> ~/.bashrc
+echo "alias ap='ansible-playbook'" >> ~/.bashrc
 source ~/.bashrc
 
 # APT Stuff
