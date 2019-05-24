@@ -8,7 +8,7 @@ echo -e "\n*** Fix .bashrc ***"
 echo -e '\n# Custom prompt & aliases' >> .bashrc
 echo "PS1='$ '" >> ~/.bashrc
 echo "alias ll='ls -lF --group-directories-first'" >> ~/.bashrc
-echo "alias ap='ansible-playbook'" >> ~/.bashrc
+echo "alias ap=ansible-playbook" >> ~/.bashrc
 source ~/.bashrc
 
 # APT Stuff
@@ -45,6 +45,13 @@ cd ~/.ansible/plugins/modules/ntc_ansible/ntc-templates/
 sudo python setup.py install
 cd ~/.ansible/plugins/modules/ntc_ansible/
 sudo python setup.py install
+
+# Install Check Point API Python SDK & Ansible modules
+pip install git+https://github.com/CheckPointSW/cp_mgmt_api_python_sdk
+git clone https://github.com/CheckPointSW/cpAnsible
+mkdir ~/.ansible/plugins/modules/check_point_mgmt
+cp cpAnsible/check_point_mgmt/check_point_mgmt.py ~/.ansible/plugins/modules/check_point_mgmt
+rm -rf cpAnsible
 
 # Run checks!
 cd ~
