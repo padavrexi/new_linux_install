@@ -19,7 +19,7 @@ sudo apt install python-pip python3-pip python-setuptools build-essential python
 sudo apt autoremove --yes
 
 # PIP Stuff
-pip install httplib2 pysnmp jinja2 six bracket-expansion yamllint
+pip install httplib2 pysnmp jinja2 six bracket-expansion yamllint packaging
 
 # Fix ansible.cfg
 sudo sed -i 's/#gathering.*/gathering = explicit/' /etc/ansible/ansible.cfg
