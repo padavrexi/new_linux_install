@@ -19,7 +19,7 @@ sudo apt install python-pip python3-pip python-setuptools build-essential python
 sudo apt autoremove --yes
 
 # PIP Stuff
-pip install httplib2 pysnmp jinja2 six bracket-expansion yamllint packaging
+pip install httplib2 pysnmp jinja2 six bracket-expansion yamllint packaging msrestazure ansible[azure]
 
 # Fix ansible.cfg
 sudo sed -i 's/#gathering.*/gathering = explicit/' /etc/ansible/ansible.cfg
@@ -27,6 +27,9 @@ sudo sed -i 's/#host_key_checking.*/host_key_checking = False/' /etc/ansible/ans
 sudo sed -i 's/#scp_if_ssh.*/scp_if_ssh = True/' /etc/ansible/ansible.cfg
 sudo sed -i 's/#retry_files_enabled.*/retry_files_enabled = False/' /etc/ansible/ansible.cfg
 sudo sed -i 's/#library.*/library = \/usr\/share\/ansible\/plugins\/modules:$HOME\/.ansible\/plugins\/modules/' /etc/ansible/ansible.cfg
+
+# Install Azure CLI
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 # Install Citrix NITRO SDK
 git clone https://github.com/citrix/netscaler-ansible-modules.git
