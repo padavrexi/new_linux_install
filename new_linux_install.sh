@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Exit script if error encountered
+# Exit script if error encounteredd
 set -e
 
 # .bashrc stuff
