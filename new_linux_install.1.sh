@@ -8,6 +8,7 @@ echo -e '\n# Custom prompt & aliases' >> .bashrc
 echo "PS1='$ '" >> ~/.bashrc
 echo "alias ll='ls -lF --group-directories-first'" >> ~/.bashrc
 echo "alias ap=ansible-playbook" >> ~/.bashrc
+touch ~/.hushlogin
 source ~/.bashrc
 #
 # APT Stuff
